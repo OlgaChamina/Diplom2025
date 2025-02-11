@@ -1,0 +1,137 @@
+{
+    "name": "authTestEmptyLogin",
+    "start": 1739266084440,
+    "stop": 1739266093607,
+    "stage": "finished",
+    "description": "Авторизация  пользователя с пустым полем логин и валидным паролем password2",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Проверяем, что находимся на страние Авторизация",
+            "start": 1739266084912,
+            "stop": 1739266084912,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверяем, что находимся на страние Авторизация",
+            "start": 1739266088960,
+            "stop": 1739266088960,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Поле Логин оставляем пустым, и проверяем всплывающее сообщение",
+            "start": 1739266091968,
+            "stop": 1739266091968,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "В поле Пароль вводим валидный пароль password2",
+            "start": 1739266091997,
+            "stop": 1739266091997,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Войти",
+            "start": 1739266092034,
+            "stop": 1739266092034,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "52e452c8-f521-4c81-86a7-5ffeeddc779c",
+    "historyId": "ab0007fa8ef82c0c964f651eb18ef6a3",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AutorizasionTest.authTestEmptyLogin",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AutorizasionTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "authTestEmptyLogin"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AutorizasionTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(1047)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Тест-кейсы для проведения  тестирования страницы Авторизации пользователя в приложении В хосписе"
+        }
+    ]
+}

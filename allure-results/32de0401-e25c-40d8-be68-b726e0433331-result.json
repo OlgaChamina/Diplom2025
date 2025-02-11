@@ -1,0 +1,137 @@
+{
+    "name": "authTestSpecialCharactersLogin",
+    "start": 1739198592342,
+    "stop": 1739198608483,
+    "stage": "finished",
+    "description": "Авторизация  пользователя с невалидными данными в поле логин - спецсимволы и валидным паролем password2",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Проверяем, что находимся на страние Авторизация",
+            "start": 1739198593074,
+            "stop": 1739198593074,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверяем, что находимся на страние Авторизация",
+            "start": 1739198600782,
+            "stop": 1739198600782,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "В Поле Логин вводим данные - спецсимволы",
+            "start": 1739198603785,
+            "stop": 1739198603785,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "В поле Пароль вводим валидный пароль password2",
+            "start": 1739198603801,
+            "stop": 1739198603801,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Войти",
+            "start": 1739198604269,
+            "stop": 1739198604269,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "32de0401-e25c-40d8-be68-b726e0433331",
+    "historyId": "ade656ec918a04f1ecd553359c4817b4",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AutorizasionTest.authTestSpecialCharactersLogin",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AutorizasionTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "authTestSpecialCharactersLogin"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AutorizasionTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(3787)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Тест-кейсы для проведения  тестирования страницы Авторизации пользователя в приложении В хосписе"
+        }
+    ]
+}

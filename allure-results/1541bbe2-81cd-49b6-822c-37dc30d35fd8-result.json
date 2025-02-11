@@ -1,0 +1,137 @@
+{
+    "name": "authTestUpperCasePasswordUpperCaseLogin",
+    "start": 1739263537300,
+    "stop": 1739263546251,
+    "stage": "finished",
+    "description": "Авторизация  пользователя c заглавными символами в поле логин: LOGIN2 и с заглавными символами в поле пароль PASSWORD2",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Проверяем, что находимся на страние Авторизация",
+            "start": 1739263538068,
+            "stop": 1739263538068,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверяем, что находимся на страние Авторизация",
+            "start": 1739263541716,
+            "stop": 1739263541716,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "В Поле Логин вводим данные заглавными буквами, и проверяем всплывающее сообщение",
+            "start": 1739263544727,
+            "stop": 1739263544727,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "В Поле Пароль вводим данные заглавными буквами, и проверяем всплывающее сообщение",
+            "start": 1739263544751,
+            "stop": 1739263544751,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Войти",
+            "start": 1739263544767,
+            "stop": 1739263544767,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "1541bbe2-81cd-49b6-822c-37dc30d35fd8",
+    "historyId": "1ae10410fe3f8be0429669a7ddd0c9aa",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AutorizasionTest.authTestUpperCasePasswordUpperCaseLogin",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AutorizasionTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "authTestUpperCasePasswordUpperCaseLogin"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AutorizasionTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(767)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Тест-кейсы для проведения  тестирования страницы Авторизации пользователя в приложении В хосписе"
+        }
+    ]
+}

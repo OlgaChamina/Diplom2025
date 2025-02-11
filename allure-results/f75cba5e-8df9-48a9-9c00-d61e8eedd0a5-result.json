@@ -1,0 +1,137 @@
+{
+    "name": "buttonMainInMainMenuInQuotePage",
+    "start": 1739269620897,
+    "stop": 1739269635474,
+    "stage": "finished",
+    "description": "Переход со страницы Цитаты на страницу Главная кнопкой Главная в меню AppBar",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Проверяем, что находимся на страние Авторизация",
+            "start": 1739269625974,
+            "stop": 1739269625974,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Цитаты в AppBar",
+            "start": 1739269628980,
+            "stop": 1739269628980,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Меню в AppBar",
+            "start": 1739269629551,
+            "stop": 1739269629551,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Главная в Главном меню В AppBar",
+            "start": 1739269631973,
+            "stop": 1739269631973,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверяем, находимся ли на Главной странице Приложения",
+            "start": 1739269633136,
+            "stop": 1739269633136,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "f75cba5e-8df9-48a9-9c00-d61e8eedd0a5",
+    "historyId": "abb9b06b1511c6e567b849c83f832540",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.QuoteTest.buttonMainInMainMenuInQuotePage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.QuoteTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "buttonMainInMainMenuInQuotePage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.QuoteTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(508)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Тест-кейсы для проведения  тестирования страницы Цитаты в приложении В хосписе"
+        }
+    ]
+}

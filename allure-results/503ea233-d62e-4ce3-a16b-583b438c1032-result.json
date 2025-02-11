@@ -1,0 +1,121 @@
+{
+    "name": "deploymentRollUpQuoteTitleDescription",
+    "start": 1739269576437,
+    "stop": 1739269589800,
+    "stage": "finished",
+    "description": "Развертывание цитаты путем нажатия на заголовок цитаты",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Проверяем, что находимся на страние Авторизация",
+            "start": 1739269581510,
+            "stop": 1739269581510,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Цитаты в AppBar",
+            "start": 1739269584525,
+            "stop": 1739269584526,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку поле Заголовка цитаты",
+            "start": 1739269585431,
+            "stop": 1739269585431,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на поле описания цитаты",
+            "start": 1739269586688,
+            "stop": 1739269586688,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "503ea233-d62e-4ce3-a16b-583b438c1032",
+    "historyId": "63ee4de3deb31c0c6471fe8aa29d586e",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.QuoteTest.deploymentRollUpQuoteTitleDescription",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.QuoteTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "deploymentRollUpQuoteTitleDescription"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.QuoteTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(508)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Тест-кейсы для проведения  тестирования страницы Цитаты в приложении В хосписе"
+        }
+    ]
+}
