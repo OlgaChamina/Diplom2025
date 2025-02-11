@@ -114,25 +114,6 @@ public class ControlPanelTest {
         ControlPanelStep.checkingWarning("Saving failed. Try again later.", true);
     }
 
-
-
-   // @Test
-   // @Description("Редактирование Даты публикации новости с определенным заголовком на странице Панель управления")
-   // public void changeDataPublicationNewsOnOnControlPanel() {
-   //     NewsStep.clickButtonAllNews();
-   //     CreatingNewsStep.enterDataInFieldsCategoryTitleDescription("Массаж","очень хороший", "Массаж");
-   //     CreatingNewsStep.enterDataInPublicationDateControlPanelAddNews("20.03.2025");
-   //     CreatingNewsStep.choosePublicationTimeControlPanelAddNews();
-   //     CreatingNewsStep.clickButtonOkInFieldPublicationTimeControlPanelAddNews();
-   //     CreatingNewsStep.clickButtonSaveAddingNewsControlPanelAddNews();
-   //     ControlPanelStep.openNewsCard("очень хороший");
-   //     ControlPanelStep.enterDataFieldTitleInEditNewsOnContralPanel("не очень!!");
-   //     ControlPanelStep.enterDataFieldDataInEditNewsOnContralPanel("20.08.2025");
-   //     ControlPanelStep.clickButtonSaveEditingNewsOnContralPanel();
-   //     ControlPanelStep.openNewsCard("не очень!!");
-   //     ControlPanelStep.getNewsDataPublication().check(matches(withText("20.08.2025")));
-   //     ControlPanelStep.deleteNewsOnControlPanel("не очень!");
-   // }
     @Test
     @Description("Редактирование Категории новости с определенным заголовком на странице Панель управления")
     public void changeCategoryPublicationNewsOnOnControlPanel() {

@@ -48,7 +48,7 @@ public class NewsTest {
         NewsStep.clickButtonSortingNews();
     }
     @Test
-    @Description("Фильтрация новостей на странице Новости по категории Объявление (негативный)")
+    @Description("Фильтрация для поиска вновь созданной новости на странице Новости по категории Объявление (негативный)")
     public void filteredNewsAllFieldsAreFilledIn(){
         NewsStep.clickButtonAllNews();
         CreatingNewsStep.addNewNewsWithData("Объявление", "Задачи", "решаем");
