@@ -25,7 +25,6 @@ import ru.iteco.fmhandroid.ui.data.WaitId;
 public class AboutStep {
     public static void clickButtonMainMenu(){
         Allure.step("Нажать на кнопку Меню");
-        waitElement(R.id.main_menu_image_button);
         waitFor(3);
         onView(getButtonMainMenu())
                 .perform(click());
@@ -33,21 +32,18 @@ public class AboutStep {
 
     public static void clickButtonAbout() {
         Allure.step("Нажать на кнопку О приложении");
-        waitElement(android.R.id.title);
         onView(getButtonAbout())
                 .perform(click());
     }
 
     public static void clickLinkPrivacyPolicy(){
         Allure.step("Проверить, что ссылка Политика Конфиденциальности присутствует и нажать на нее");
-        waitElement(R.id.about_privacy_policy_value_text_view);
         onView(getLinkPrivacyPolicy())
                 .check(matches(allOf(withText("https://vhospice.org/#/privacy-policy/"), isDisplayed(), isClickable())));
     }
 
     public static void clickLinkTermsOfUse(){
         Allure.step("Проверить, что ссылка Пользовательское соглашение присутствует и нажать на нее");
-        waitElement(R.id.about_terms_of_use_value_text_view);
         onView(getLinkTermsOfUse())
                 .check(matches(allOf(withText("https://vhospice.org/#/terms-of-use"), isDisplayed(), isClickable())));
     }
@@ -57,7 +53,6 @@ public class AboutStep {
     }
     public static void clickButtonBack() {
         Allure.step("Нажать на кнопку назад в AppBar");
-        waitElement(R.id.about_back_image_button);
         onView(getButtonBack())
                 .perform(click());
     }

@@ -61,7 +61,6 @@ public class ControlPanelStep {
 
     public static void clickSortingNews(){
         Allure.step("Нажать на кнопку сортировка новостей");
-        waitElement(R.id.sort_news_material_button);
         onView(getButtonSortingNewsInControlPanel()).perform(click());
     }
 
@@ -70,97 +69,77 @@ public class ControlPanelStep {
 
     public static void clickFilteredNews(){
         Allure.step("Нажать на кнопку фильтровать для перехода на страницу Фильтрации");
-        waitElement(R.id.filter_news_material_button);
         onView(getButtonFilteredNewsInControlPanel()).perform(click());
     }
 
     public static void selectCategoryInFilteredNews(String category){
         Allure.step("Вписать категорию, по которой будет осуществлятся фильтрация новостей");
-        waitElement(R.id.news_item_category_text_auto_complete_text_view);
         onView(getFieldCategoryInFilteredNewsPageInControlPanel()).perform(click(), replaceText(category), closeSoftKeyboard());
     }
     public static void selectDataStartInFilteredNews(String dataStart){
         Allure.step("Выбрать дату начала фильтрации, по которой будет осуществляться фильтрация новостей");
-        waitElement(R.id.news_item_publish_date_start_text_input_edit_text);
         onView(getFieldDataStartInFilteredNewsPageInControlPanel()).perform(replaceText(dataStart));
 
     }
     public static void selectDataEndInFilteredNews(String dataEnd){
         Allure.step("Выбрать дату окончания  фильтрации, по которой будет осуществляться фильтрация новостей");
-        waitElement(R.id.news_item_publish_date_end_text_input_edit_text);
         onView(getFieldDataEndInFilteredNewsPageInControlPanel()).perform(replaceText(dataEnd));
 
     }
     public static void selectcheckBoxActiveInFilteredNews(){
         Allure.step("Переключение  статус Активна");
-        waitElement(R.id.filter_news_active_material_check_box);
         onView(getCheckBoxActiveInFilteredNewsPageInControlPanel()).perform(click());
 
     }
     public static void selectcheckBoxNotActiveInFilteredNews(){
         Allure.step("Переключение  статуса не Активна");
-        waitElement(R.id.filter_news_inactive_material_check_box);
         onView(getCheckBoxNotActiveInFilteredNewsPageInControlPanel()).perform(click());
 
     }
     public static void clickButtonFilterInFilteredNews(){
         Allure.step("Нажать на кнопку Фильтровать");
-        waitElement(R.id.filter_button);
         onView(getButtonFilterInFilteredNewsPageInControlPanel()).perform(click());
     }
 
-
-
     public static void enterDataFieldCategoryInEditNewsOnContralPanel(String categoryChange){
         Allure.step("Ввести данные в  поле категория на странице редактирования новостей");
-        waitElement(R.id.news_item_category_text_auto_complete_text_view);
         onView(getFieldCategoryEditableNewsInControlPanel()).perform(click(), replaceText(categoryChange), closeSoftKeyboard());
     }
     public static void enterDataFieldDescriptionInEditNewsOnContralPanel(String changeDescription){
         Allure.step("Ввести данные в  поле описание на странице редактирования новостей");
-        waitElement(R.id.news_item_description_text_input_edit_text);
         onView(getFieldDescriptionEditableNewsInControlPanel()).perform(click(), replaceText(changeDescription), closeSoftKeyboard());
     }
 
     public static void enterDataFieldTitleInEditNewsOnContralPanel(String title) {
         Allure.step("Ввести данные в  поле заголовок на странице редактирования новостей");
-        waitElement(R.id.news_item_title_text_input_edit_text);
         onView(getFieldTitleEditableNewsInControlPanel()).perform(click(), replaceText(title), closeSoftKeyboard());
-
     }
-
 
     public static void clickButtonSaveEditingNewsOnContralPanel(){
         Allure.step("Нажать на кнопку сохранить отредактированную новость");
-        waitElement(R.id.save_button);
         onView(getButtonSaveEditableNewsInControlPanel()).perform(click());
     }
 
-
     public static void findNewsWithCategoryAdversiment(String title) {
         Allure.step("Проверить, что новости с  категорией Объявление");
-        waitElement(R.id.news_item_title_text_view);
         onView(allOf(withId(R.id.news_item_title_text_view), withText(title),
                 isDisplayed()));
     }
 
     public static void findNewsWithStatusNotActive() {
         Allure.step("Проверить, что новости с  категорией Благодарность");
-        waitElement(R.id.news_list_recycler_view);
         onView(allOf(withId(R.id.news_item_published_text_view), withText("NOT ACTIVE"),
                 withParent(withParent(withId(R.id.news_item_material_card_view))),
                 isDisplayed()));
     }
     public static void findNewsWithStatusActive() {
         Allure.step("Проверить, что отображаются новости с  категорией Благодарность");
-        waitElement(R.id.news_list_recycler_view);
         onView(allOf(withId(R.id.news_item_published_text_view), withText("ACTIVE"),
                 withParent(withParent(withId(R.id.news_item_material_card_view))),
                 isDisplayed()));
     }
     public static void findNewsWithSelectData(String selectData) {
         Allure.step("Проверить, что новости с  определенной датой");
-        waitElement(R.id.news_list_recycler_view);
         onView(allOf(withId(R.id.news_item_publication_date_text_view), withText(selectData),
                 isDisplayed()));
     }

@@ -1,0 +1,428 @@
+{
+    "name": "changeCategoryPublicationNewsOnOnControlPanel",
+    "start": 1739635288637,
+    "stop": 1739635299879,
+    "stage": "finished",
+    "description": "Редактирование Категории новости с определенным заголовком на странице Панель управления",
+    "descriptionHtml": null,
+    "status": "broken",
+    "statusDetails": {
+        "message": "Error performing 'scroll RecyclerView to: holder with view: ((view is an instance of android.view.ViewGroup and has descendant matching an instance of android.widget.TextView and view.getText() with or without transformation to match: is \"набастовались!\"))' on view 'Animations or transitions are enabled on the target device.\nFor more info check: https://developer.android.com/training/testing/espresso/setup#set-up-environment\n\nview.getId() is <2131231145/ru.iteco.fmhandroid:id/news_list_recycler_view>'.",
+        "trace": "androidx.test.espresso.PerformException: Error performing 'scroll RecyclerView to: holder with view: ((view is an instance of android.view.ViewGroup and has descendant matching an instance of android.widget.TextView and view.getText() with or without transformation to match: is \"набастовались!\"))' on view 'Animations or transitions are enabled on the target device.\nFor more info check: https://developer.android.com/training/testing/espresso/setup#set-up-environment\n\nview.getId() is <2131231145/ru.iteco.fmhandroid:id/news_list_recycler_view>'.\n\tat androidx.test.espresso.PerformException$Builder.build(PerformException.java:1)\n\tat androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:9)\n\tat androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)\n\tat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)\n\tat androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)\n\tat androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:4)\n\tat ru.iteco.fmhandroid.ui.controlpanel.ControlPanelStep.scrollToElementInRecyclerList(ControlPanelStep.java:199)\n\tat ru.iteco.fmhandroid.ui.controlpanel.ControlPanelStep.checkNewsIsPresent(ControlPanelStep.java:175)\n\tat ru.iteco.fmhandroid.ui.controlpanel.ControlPanelStep.openNewsCard(ControlPanelStep.java:170)\n\tat ru.iteco.fmhandroid.ui.tests.ControlPanelTest.changeCategoryPublicationNewsOnOnControlPanel(ControlPanelTest.java:126)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat androidx.test.internal.runner.junit4.statement.RunBefores.evaluate(RunBefores.java:80)\n\tat androidx.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:549)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)\n\tat io.qameta.allure.android.runners.AllureAndroidJUnit4.run(AllureAndroidJUnitRunners.kt:29)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:444)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)\nCaused by: java.lang.RuntimeException: Found more than one sub-view matching holder with view: ((view is an instance of android.view.ViewGroup and has descendant matching an instance of android.widget.TextView and view.getText() with or without transformation to match: is \"набастовались!\"))\n\n*** Matched ViewHolder item at position: 4 ***\n\nView Hierarchy:\n+>MaterialCardView{id=2131231130, res-name=news_item_material_card_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=true, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.recyclerview.widget.RecyclerView$LayoutParams@1ecaceb, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, is-checked=false, child-count=1} \n|\n+->ConstraintLayout{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@b5ff4b6, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, child-count=18} \n|\n+-->AppCompatImageView{id=2131230864, res-name=category_icon_image_view, desc=News category icon, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@f2ed5b7, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231144, res-name=news_item_title_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@e98f124, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=набастовались!, input-type=0, ime-target=false, has-links=false} \n|\n+-->View{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@66fd48d, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231132, res-name=news_item_publication_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@26ea642, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Publication date, input-type=0, ime-target=false, has-links=false} \n|\n+-->View{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@8d11653, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231124, res-name=news_item_creation_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@d05fb90, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Creation date, input-type=0, ime-target=false, has-links=false} \n|\n+-->View{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@f922c89, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->View{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@5c4e48e, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231118, res-name=news_item_author_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@64cc4af, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Author, input-type=0, ime-target=false, has-links=false} \n|\n+-->MaterialTextView{id=2131231131, res-name=news_item_publication_date_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@f740bc, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=15.02.2025, input-type=0, ime-target=false, has-links=false} \n|\n+-->MaterialTextView{id=2131231123, res-name=news_item_create_date_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@c680845, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=05.11.57096, input-type=0, ime-target=false, has-links=false} \n|\n+-->MaterialTextView{id=2131231117, res-name=news_item_author_name_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@52ebb9a, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Лебедев Д.А., input-type=0, ime-target=false, has-links=false} \n|\n+-->AppCompatImageView{id=2131231140, res-name=news_item_published_icon_image_view, desc=News publish icon, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@52afccb, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231141, res-name=news_item_published_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@c55aca8, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Active, input-type=0, ime-target=false, has-links=false} \n|\n+-->AppCompatImageView{id=2131230927, res-name=delete_news_item_image_view, desc=News delete button, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=true, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@d05e3c1, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->AppCompatImageView{id=2131230958, res-name=edit_news_item_image_view, desc=News editing button, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=true, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@f2cf766, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->AppCompatImageView{id=2131231323, res-name=view_news_item_image_view, desc=Expand news card button, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@86a9aa7, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231128, res-name=news_item_description_text_view, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@4aceb54, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Всех сотрудников, input-type=0, ime-target=false, has-links=false} \n\n\n*** Matched ViewHolder item at position: 7 ***\n\nView Hierarchy:\n+>MaterialCardView{id=2131231130, res-name=news_item_material_card_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=true, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.recyclerview.widget.RecyclerView$LayoutParams@1ecaceb, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, is-checked=false, child-count=1} \n|\n+->ConstraintLayout{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=true, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@b5ff4b6, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, child-count=18} \n|\n+-->AppCompatImageView{id=2131230864, res-name=category_icon_image_view, desc=News category icon, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@f2ed5b7, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231144, res-name=news_item_title_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@e98f124, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=набастовались!, input-type=0, ime-target=false, has-links=false} \n|\n+-->View{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@66fd48d, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231132, res-name=news_item_publication_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@26ea642, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Publication date, input-type=0, ime-target=false, has-links=false} \n|\n+-->View{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@8d11653, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231124, res-name=news_item_creation_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@d05fb90, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Creation date, input-type=0, ime-target=false, has-links=false} \n|\n+-->View{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@f922c89, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->View{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@5c4e48e, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231118, res-name=news_item_author_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@64cc4af, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Author, input-type=0, ime-target=false, has-links=false} \n|\n+-->MaterialTextView{id=2131231131, res-name=news_item_publication_date_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@f740bc, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=15.02.2025, input-type=0, ime-target=false, has-links=false} \n|\n+-->MaterialTextView{id=2131231123, res-name=news_item_create_date_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@c680845, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=24.10.57096, input-type=0, ime-target=false, has-links=false} \n|\n+-->MaterialTextView{id=2131231117, res-name=news_item_author_name_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@52ebb9a, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Лебедев Д.А., input-type=0, ime-target=false, has-links=false} \n|\n+-->AppCompatImageView{id=2131231140, res-name=news_item_published_icon_image_view, desc=News publish icon, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@52afccb, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231141, res-name=news_item_published_text_view, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@c55aca8, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Active, input-type=0, ime-target=false, has-links=false} \n|\n+-->AppCompatImageView{id=2131230927, res-name=delete_news_item_image_view, desc=News delete button, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=true, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@d05e3c1, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->AppCompatImageView{id=2131230958, res-name=edit_news_item_image_view, desc=News editing button, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=true, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@f2cf766, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->AppCompatImageView{id=2131231323, res-name=view_news_item_image_view, desc=Expand news card button, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@86a9aa7, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->MaterialTextView{id=2131231128, res-name=news_item_description_text_view, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@4aceb54, tag=null, root-is-layout-requested=true, has-input-connection=false, x=0.0, y=0.0, text=Всех сотрудников, input-type=0, ime-target=false, has-links=false} \n\n\tat androidx.test.espresso.contrib.RecyclerViewActions$ScrollToViewAction.perform(RecyclerViewActions.java:372)\n\tat androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)\n\tat androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:22)\n\tat androidx.test.espresso.ViewInteraction.access$100(ViewInteraction.java:1)\n\tat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:2)\n\tat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat android.app.ActivityThread.main(ActivityThread.java:7356)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)\n"
+    },
+    "steps": [
+        {
+            "name": "Проверяем, что находимся на страние Авторизация",
+            "start": 1739635289046,
+            "stop": 1739635289047,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Все новости",
+            "start": 1739635292274,
+            "stop": 1739635292274,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Создать и сохранить новость с всеми полями, заполненными валидными значениями с текущей датой и временем",
+            "start": 1739635292595,
+            "stop": 1739635292595,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Создания и редактирования новостей",
+            "start": 1739635292595,
+            "stop": 1739635292595,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Добавить новость",
+            "start": 1739635292947,
+            "stop": 1739635292947,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввести данные в поле Категория",
+            "start": 1739635293276,
+            "stop": 1739635293276,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввести данные в поле Заголовок",
+            "start": 1739635294088,
+            "stop": 1739635294088,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на поле Дата публикации",
+            "start": 1739635294378,
+            "stop": 1739635294378,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Ок в календаре при выборе даты публикации",
+            "start": 1739635295155,
+            "stop": 1739635295155,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на поле Время публикации",
+            "start": 1739635295467,
+            "stop": 1739635295467,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку Ок на часах при выборе времени публикации",
+            "start": 1739635295849,
+            "stop": 1739635295849,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввести данные в поле Описание",
+            "start": 1739635296169,
+            "stop": 1739635296169,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку сохранить новость",
+            "start": 1739635296803,
+            "stop": 1739635296804,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Открываем карточку новости",
+            "start": 1739635297081,
+            "stop": 1739635297081,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ищем вновь созданную новость в списке",
+            "start": 1739635297081,
+            "stop": 1739635297081,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Переходим к нужному элементу",
+            "start": 1739635297081,
+            "stop": 1739635297081,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверяем новый заголовок новости",
+            "start": 1739635297112,
+            "stop": 1739635297112,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввести данные в  поле категория на странице редактирования новостей",
+            "start": 1739635297459,
+            "stop": 1739635297459,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ввести данные в  поле заголовок на странице редактирования новостей",
+            "start": 1739635298311,
+            "stop": 1739635298311,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажать на кнопку сохранить отредактированную новость",
+            "start": 1739635298618,
+            "stop": 1739635298618,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Открываем карточку новости",
+            "start": 1739635298892,
+            "stop": 1739635298893,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ищем вновь созданную новость в списке",
+            "start": 1739635298893,
+            "stop": 1739635298893,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Переходим к нужному элементу",
+            "start": 1739635298893,
+            "stop": 1739635298893,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "0af2f545-1766-45de-bb19-c651ee234b66",
+    "historyId": "faad84966c279362a6336d40afca7ddf",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.ControlPanelTest.changeCategoryPublicationNewsOnOnControlPanel",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.ControlPanelTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "changeCategoryPublicationNewsOnOnControlPanel"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.ControlPanelTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(166)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "epic",
+            "value": "Тест-кейсы для проведения  тестирования страницы Панель Управления в приложении В хосписе"
+        }
+    ]
+}

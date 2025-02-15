@@ -35,30 +35,24 @@ import ru.iteco.fmhandroid.ui.data.WaitId;
 public class NewsStep {
     public static void clickButtonAllNews(){
         Allure.step("Нажать на кнопку Все новости");
-        waitElement(R.id.all_news_text_view);
         onView(getAllNewsButton()).perform(click());
     }
     public static void clickButtonSortingNews(){
         Allure.step("Нажать на кнопку Сортировка новостей");
-        waitElement(R.id.sort_news_material_button);
         onView(getSortingNewsButton()).perform(click());
     }
     public static void clickButtonFilteredNews(){
         Allure.step("Нажать на кнопку Фильтрация новостей");
-        waitElement(R.id.filter_news_material_button);
         onView(getFilterNewsButton()).perform(click());
     }
 
     public static void enterDataOnFieldChooseCategoryOfFiltered(String category){
         Allure.step("Выбрать категорию на странице  Фильтрации новостей");
-        waitElement(R.id.news_item_category_text_auto_complete_text_view);
         onView(getInFilterNewsChooseCategoryField()).perform(click(), replaceText(category), closeSoftKeyboard());
     }
 
-
     public static void clickButtonFilterOnFiltered(){
         Allure.step("Нажать на кнопку Фильтровать");
-        waitElement(R.id.filter_button);
         onView(getInFilterNewsClickFilterButton()).perform(click());
     }
     public static void isItNewsPage() {
@@ -68,7 +62,6 @@ public class NewsStep {
     }
     public static void clickFieldMainInMainMenu() {
         Allure.step("Нажать на кнопку Главная в Главном меню В AppBar");
-        waitElement(android.R.id.title);
         onView(getInMainMenuFieldMain()).perform(click());
     }
     public static void checkNewsIsPresent(String title) {

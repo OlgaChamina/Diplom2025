@@ -22,14 +22,7 @@ public class AuthPage extends AuthStep {
     public static Matcher<View> getAuthorizationPasswordField(){
         return allOf(withHint("Password"), withParent(withParent(withId(R.id.password_text_input_layout))));
     }
-    //public static int getExitButton (){
-//
-   //     return R.id.authorization_image_button;
-    //}
 
-    //public static Matcher<View> getLogOutButton(){
-    //    return allOf(withId(android.R.id.title), withText("Log out"));
-    //}
     public static Matcher<View> getAuthText(){
         return allOf(withText("Authorization"), withParent(withParent(withId(R.id.nav_host_fragment))));
     }
