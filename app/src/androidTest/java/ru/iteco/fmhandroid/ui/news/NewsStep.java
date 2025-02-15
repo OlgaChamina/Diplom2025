@@ -39,33 +39,40 @@ public class NewsStep {
     }
     public static void clickButtonSortingNews(){
         Allure.step("Нажать на кнопку Сортировка новостей");
+
         onView(getSortingNewsButton()).perform(click());
     }
     public static void clickButtonFilteredNews(){
         Allure.step("Нажать на кнопку Фильтрация новостей");
+
         onView(getFilterNewsButton()).perform(click());
     }
 
     public static void enterDataOnFieldChooseCategoryOfFiltered(String category){
         Allure.step("Выбрать категорию на странице  Фильтрации новостей");
+
         onView(getInFilterNewsChooseCategoryField()).perform(click(), replaceText(category), closeSoftKeyboard());
     }
 
     public static void clickButtonFilterOnFiltered(){
         Allure.step("Нажать на кнопку Фильтровать");
+
         onView(getInFilterNewsClickFilterButton()).perform(click());
     }
     public static void isItNewsPage() {
         Allure.step("Проверяем, находимся ли на странице Новости.");
+
         WaitId.waitView(withText("News")).check(matches(isDisplayed()));
 
     }
     public static void clickFieldMainInMainMenu() {
         Allure.step("Нажать на кнопку Главная в Главном меню В AppBar");
+
         onView(getInMainMenuFieldMain()).perform(click());
     }
     public static void checkNewsIsPresent(String title) {
         Allure.step("Ищем вновь созданную новость в списке");
+
         scrollToElementInRecyclerList(title).check(matches(isDisplayed()));
     }
     public static ViewInteraction scrollToElementInRecyclerList(String title) {

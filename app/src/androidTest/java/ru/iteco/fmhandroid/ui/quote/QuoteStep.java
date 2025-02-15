@@ -35,6 +35,5 @@ public class QuoteStep {
     public static void isItQuotePage() {
         Allure.step("Проверяем, находимся ли на странице Цитаты.");
         WaitId.waitView(withText("Love is all")).check(matches(isDisplayed()));
-
     }
 }

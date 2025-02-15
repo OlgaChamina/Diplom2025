@@ -46,52 +46,64 @@ public class CreatingNewsStep {
 
     public static void clickButtonControlPanel(){
         Allure.step("Нажать на кнопку Создания и редактирования новостей");
+
         onView(getButtonControlPanel()).perform(click());
     }
     public static void clickButtonControlPanelAddNews(){
         Allure.step("Нажать на кнопку Добавить новость");
+
         onView(getButtonControlPanelAddNews()).perform(click());
     }
 
     public static void enterDataInFieldCategoryControlPanelAddNews(String category){
         Allure.step("Ввести данные в поле Категория");
+
         onView(getFieldCategoryControlPanelAddNews()).perform(click(), replaceText(category), closeSoftKeyboard());
     }
     public static void enterDataInFieldTitleControlPanelAddNews(String title){
         Allure.step("Ввести данные в поле Заголовок");
+
         onView(getFieldTitleControlPanelAddNews()).perform(click(), replaceText(title), closeSoftKeyboard());
     }
     public static void choosePublicationDateControlPanelAddNews(){
         Allure.step("Нажать на поле Дата публикации");
+
         onView(getFieldPublicationDateControlPanelAddNews()).perform(click());
     }
     public static void clickButtonOkInFieldPublicationDateControlPanelAddNews(){
         Allure.step("Нажать на кнопку Ок в календаре при выборе даты публикации");
+
         onView(getButtonOkInFieldPublicationDateControlPanelAddNews()).perform(click());
     }
     public static void choosePublicationTimeControlPanelAddNews(){
         Allure.step("Нажать на поле Время публикации");
+
         onView(getFieldPublicationTimeControlPanelAddNews()).perform(click());
     }
     public static void enterDataInPublicationDateControlPanelAddNews(String dataPublication){
         Allure.step("Ввести данные в поле Дата публикации");
+
         onView(getFieldPublicationDateControlPanelAddNews()).perform(replaceText(dataPublication));
     }
 
     public static void clickButtonOkInFieldPublicationTimeControlPanelAddNews(){
         Allure.step("Нажать на кнопку Ок на часах при выборе времени публикации");
+
         onView(getButtonOkInFieldPublicationTimeControlPanelAddNews()).perform(click());
     }
     public static void enterDataInFieldDescriptionControlPanelAddNews(String description){
         Allure.step("Ввести данные в поле Описание");
+
         onView(getFieldDescriptionControlPanelAddNews()).perform(click(), replaceText(description), closeSoftKeyboard());
     }
     public static void clickButtonSaveAddingNewsControlPanelAddNews(){
         Allure.step("Нажать на кнопку сохранить новость");
+
         onView(getButtonSaveAddingNewsControlPanelAddNews()).perform(click());
     }
     public static void findNewsWithSpecifiedDescriptionOnListRecycler(String title){
         Allure.step("Найти вновь созданную новость в списке новостей");
+
         onView(getPageNewsListRecycler()).perform(RecyclerViewActions.scrollTo(hasDescendant(withText(title))));
     }
     public static void addNewNewsWithData(String category, String title, String description){
@@ -162,22 +174,27 @@ public class CreatingNewsStep {
 
     public static void emptyCategoryWarningSignIsVisible(){
         Allure.step("Предупреждающий знак присутствует и виден в поле Категория");
+
         onView(getEmptyCategory()).check(matches(isDisplayed()));
     }
     public static void emptyTitleWarningSignIsVisible(){
         Allure.step("Предупреждающий знак присутствует и виден в поле Заголовок");
+
         onView(getEmptyTitle()).check(matches(isDisplayed()));
     }
     public static void emptyDescriptionWarningSignIsVisible(){
         Allure.step("Предупреждающий знак присутствует и виден в поле Описание.");
+
         onView(getEmptyDescription()).check(matches(isDisplayed()));
     }
     public static void emptyPublicationDateWarningSignIsVisible(){
         Allure.step("Предупреждающий знак присутствует и виден в поле Дата публикации");
+
         onView(getEmptyPublicationDate()).check(matches(isDisplayed()));
     }
     public static void emptyPublicationTimeWarningSignIsVisible(){
         Allure.step("Предупреждающий знак присутствует и виден в поле Время публикации");
+
         onView(getEmptyPublicationTime()).check(matches(isDisplayed()));
     }
     public static void checkingWarning(String text, boolean visible){
@@ -188,11 +205,13 @@ public class CreatingNewsStep {
     }
     public static void clickButtonCancelCreatingNews(){
         Allure.step("Нажать на кнопку Отмена сохранения вновь созданной новости");
+
         onView(getButtonCancel()).perform(click());
     }
 
     public static void clickButtonCancelAfterButtonCancelCreatingNews(){
         Allure.step("Не подтверждение отмены сохранения новости");
+
         onView(getButtonCanselAfterButtonCancel()).perform(click());
     }
 

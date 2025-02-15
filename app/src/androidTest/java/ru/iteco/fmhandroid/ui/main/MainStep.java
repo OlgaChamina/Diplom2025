@@ -20,18 +20,22 @@ import ru.iteco.fmhandroid.ui.data.WaitId;
 public class MainStep {
     public static void buttonAllNewsclick(){
         Allure.step("Нажать на кнопку Все новости");
+
         onView(getButtonAllNewsClick()).perform(click());
     }
     public static void buttonMainMenuClick(){
         Allure.step("Нажать на кнопку Меню в AppBar");
+
         onView(getButtonMainMenu()).perform(click());
     }
     public static void buttonNewsClickInMainMenu(){
         Allure.step("Нажать на кнопку Новости в AppBar.");
+
         onView(getButtonNewsInMainMenu()).perform(click());
     }
     public static void buttonAboutClickInMainMenu(){
         Allure.step("Нажать на кнопку О приложении в AppBar");
+
         onView(getButtonAboutInMainMenu()).perform(click());
     }
     public static void isItMainPage() {
