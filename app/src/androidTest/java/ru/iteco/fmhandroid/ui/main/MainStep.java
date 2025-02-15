@@ -27,7 +27,7 @@ public class MainStep {
         onView(getButtonMainMenu()).perform(click());
     }
     public static void buttonNewsClickInMainMenu(){
-        Allure.step("Нажать на кнопку Новости в AppBar");
+        Allure.step("Нажать на кнопку Новости в AppBar.");
         onView(getButtonNewsInMainMenu()).perform(click());
     }
     public static void buttonAboutClickInMainMenu(){

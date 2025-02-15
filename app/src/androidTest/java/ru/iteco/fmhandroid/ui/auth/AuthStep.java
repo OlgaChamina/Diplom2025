@@ -117,7 +117,7 @@ public class AuthStep {
         onView(allOf(withContentDescription("Something went wrong. Try again later."), isDisplayed()));
     }
     public static void clickLoginFieldNumbers() {
-        Allure.step("В Поле Логин вводим данные - числа, и проверяем всплывающее сообщение");
+        Allure.step("В Поле Логин вводим данные - числа, и проверяем всплывающее сообщение.");
         onView(getAuthorizationLoginField())
                 .perform(replaceText("123456789"), closeSoftKeyboard());
         onView(allOf(withContentDescription("Something went wrong. Try again later."), isDisplayed()));

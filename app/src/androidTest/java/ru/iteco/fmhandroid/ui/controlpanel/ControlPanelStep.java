@@ -150,7 +150,7 @@ public class ControlPanelStep {
         getItemNewsEditElement(title).perform(click());
     }
     public static void checkNewsIsPresent(String title) {
-        Allure.step("Ищем вновь созданную новость в списке");
+        Allure.step("Ищем вновь созданную новость в списке.");
         scrollToElementInRecyclerList(title).check(matches(isDisplayed()));
     }
     public static ViewInteraction getItemNewsEditElement(String title) {

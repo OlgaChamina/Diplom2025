@@ -169,7 +169,7 @@ public class CreatingNewsStep {
         onView(getEmptyTitle()).check(matches(isDisplayed()));
     }
     public static void emptyDescriptionWarningSignIsVisible(){
-        Allure.step("Предупреждающий знак присутствует и виден в поле Описание");
+        Allure.step("Предупреждающий знак присутствует и виден в поле Описание.");
         onView(getEmptyDescription()).check(matches(isDisplayed()));
     }
     public static void emptyPublicationDateWarningSignIsVisible(){

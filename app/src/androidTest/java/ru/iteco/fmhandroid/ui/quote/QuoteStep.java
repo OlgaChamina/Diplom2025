@@ -25,11 +25,11 @@ public class QuoteStep {
         onView(getDeploymentButtonQuote()).perform(click());
     }
     public  static void clickTitleQuoteClick(){
-        Allure.step("Нажать на кнопку поле Заголовка цитаты");
+        Allure.step("Нажать на кнопку поле Заголовка цитаты.");
         onView(getTitleQuoteClick()).perform(click());
     }
     public static void clickDescriptionQuoteClick(){
-        Allure.step("Нажать на поле описания цитаты");
+        Allure.step("Нажать на поле описания цитаты.");
         onView(getDescriptionQuoteClick()).perform(click());
     }
     public static void isItQuotePage() {

@@ -56,7 +56,7 @@ public class NewsStep {
         onView(getInFilterNewsClickFilterButton()).perform(click());
     }
     public static void isItNewsPage() {
-        Allure.step("Проверяем, находимся ли на странице Новости");
+        Allure.step("Проверяем, находимся ли на странице Новости.");
         WaitId.waitView(withText("News")).check(matches(isDisplayed()));
 
     }
