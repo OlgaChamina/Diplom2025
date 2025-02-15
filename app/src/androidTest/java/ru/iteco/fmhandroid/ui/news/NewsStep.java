@@ -69,7 +69,7 @@ public class NewsStep {
         scrollToElementInRecyclerList(title).check(matches(isDisplayed()));
     }
     public static ViewInteraction scrollToElementInRecyclerList(String title) {
-        Allure.step("Переходим к нужному элементу");
+        Allure.step("Переходим к нужному элементу.");
         return WaitId.waitView(withId(R.id.news_list_recycler_view))
                 .perform(RecyclerViewActions.scrollTo(allOf(
                         hasDescendant(withText(title)))));

@@ -33,7 +33,7 @@ public class QuoteStep {
         onView(getDescriptionQuoteClick()).perform(click());
     }
     public static void isItQuotePage() {
-        Allure.step("Проверяем, находимся ли на странице Цитаты");
+        Allure.step("Проверяем, находимся ли на странице Цитаты.");
         WaitId.waitView(withText("Love is all")).check(matches(isDisplayed()));
 
     }

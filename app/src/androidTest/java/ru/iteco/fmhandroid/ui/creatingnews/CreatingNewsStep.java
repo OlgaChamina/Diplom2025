@@ -181,7 +181,7 @@ public class CreatingNewsStep {
         onView(getEmptyPublicationTime()).check(matches(isDisplayed()));
     }
     public static void checkingWarning(String text, boolean visible){
-        Allure.step("Проверяем видимость предупреждающего сообщения");
+        Allure.step("Проверяем видимость предупреждающего сообщения.");
         if (visible) {
             warningNow(text).check(matches(isDisplayed()));
         } else warningNow(text).check(matches(not(isDisplayed())));

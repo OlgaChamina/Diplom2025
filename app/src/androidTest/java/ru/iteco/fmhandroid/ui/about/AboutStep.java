@@ -31,7 +31,7 @@ public class AboutStep {
     }
 
     public static void clickButtonAbout() {
-        Allure.step("Нажать на кнопку О приложении");
+        Allure.step("Нажать на кнопку О приложении.");
         onView(getButtonAbout())
                 .perform(click());
     }

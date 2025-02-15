@@ -154,7 +154,7 @@ public class ControlPanelStep {
         scrollToElementInRecyclerList(title).check(matches(isDisplayed()));
     }
     public static ViewInteraction getItemNewsEditElement(String title) {
-        Allure.step("Проверяем новый заголовок новости");
+        Allure.step("Проверяем новый заголовок новости.");
         return onView(allOf(withId(R.id.edit_news_item_image_view),
                 withParent(withParent(allOf(withId(R.id.news_item_material_card_view),
                         withChild(withChild(withText(title))))))));

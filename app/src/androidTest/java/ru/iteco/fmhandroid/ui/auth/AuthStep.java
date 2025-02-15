@@ -123,7 +123,7 @@ public class AuthStep {
         onView(allOf(withContentDescription("Something went wrong. Try again later."), isDisplayed()));
     }
     public static void clickPasswordFieldNumbers() {
-        Allure.step("В Поле Пароль вводим данные - числа, и проверяем всплывающее сообщение");
+        Allure.step("В Поле Пароль вводим данные - числа, и проверяем всплывающее сообщение.");
         onView(getAuthorizationPasswordField())
                 .perform(replaceText("123456789"), closeSoftKeyboard());
         onView(allOf(withContentDescription("Something went wrong. Try again later."), isDisplayed()));

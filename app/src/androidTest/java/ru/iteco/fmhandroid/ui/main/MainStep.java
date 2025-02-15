@@ -35,7 +35,7 @@ public class MainStep {
         onView(getButtonAboutInMainMenu()).perform(click());
     }
     public static void isItMainPage() {
-        Allure.step("Проверяем, находимся ли на Главной странице Приложения");
+        Allure.step("Проверяем, находимся ли на Главной странице Приложения.");
         WaitId.waitView(withText("News")).check(matches(isDisplayed()));
         WaitId.waitView(withId((R.id.all_news_text_view))).check(matches(isDisplayed()));
 
