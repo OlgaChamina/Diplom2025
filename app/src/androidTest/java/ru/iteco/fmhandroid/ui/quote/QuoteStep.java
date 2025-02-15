@@ -21,7 +21,7 @@ public class QuoteStep {
         onView(getButtonQuote()).perform(click());
     }
     public static void clickDeploymentButtonQuote(){
-        Allure.step("Нажать на кнопку развертывания описания цитат");
+        Allure.step("Нажать на кнопку развертывания описания цитат.");
         onView(getDeploymentButtonQuote()).perform(click());
     }
     public  static void clickTitleQuoteClick(){

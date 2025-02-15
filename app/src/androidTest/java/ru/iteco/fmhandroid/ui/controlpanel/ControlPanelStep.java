@@ -61,7 +61,6 @@ public class ControlPanelStep {
 
     public static void clickSortingNews(){
         Allure.step("Нажать на кнопку сортировка новостей");
-
         onView(getButtonSortingNewsInControlPanel()).perform(click());
     }
 
@@ -70,92 +69,77 @@ public class ControlPanelStep {
 
     public static void clickFilteredNews(){
         Allure.step("Нажать на кнопку фильтровать для перехода на страницу Фильтрации");
-
         onView(getButtonFilteredNewsInControlPanel()).perform(click());
     }
 
     public static void selectCategoryInFilteredNews(String category){
         Allure.step("Вписать категорию, по которой будет осуществлятся фильтрация новостей");
-
         onView(getFieldCategoryInFilteredNewsPageInControlPanel()).perform(click(), replaceText(category), closeSoftKeyboard());
     }
     public static void selectDataStartInFilteredNews(String dataStart){
         Allure.step("Выбрать дату начала фильтрации, по которой будет осуществляться фильтрация новостей");
-
         onView(getFieldDataStartInFilteredNewsPageInControlPanel()).perform(replaceText(dataStart));
 
     }
     public static void selectDataEndInFilteredNews(String dataEnd){
         Allure.step("Выбрать дату окончания  фильтрации, по которой будет осуществляться фильтрация новостей");
-
         onView(getFieldDataEndInFilteredNewsPageInControlPanel()).perform(replaceText(dataEnd));
 
     }
     public static void selectcheckBoxActiveInFilteredNews(){
         Allure.step("Переключение  статус Активна");
-
         onView(getCheckBoxActiveInFilteredNewsPageInControlPanel()).perform(click());
 
     }
     public static void selectcheckBoxNotActiveInFilteredNews(){
         Allure.step("Переключение  статуса не Активна");
-
         onView(getCheckBoxNotActiveInFilteredNewsPageInControlPanel()).perform(click());
 
     }
     public static void clickButtonFilterInFilteredNews(){
         Allure.step("Нажать на кнопку Фильтровать");
-
         onView(getButtonFilterInFilteredNewsPageInControlPanel()).perform(click());
     }
 
     public static void enterDataFieldCategoryInEditNewsOnContralPanel(String categoryChange){
         Allure.step("Ввести данные в  поле категория на странице редактирования новостей");
-
         onView(getFieldCategoryEditableNewsInControlPanel()).perform(click(), replaceText(categoryChange), closeSoftKeyboard());
     }
     public static void enterDataFieldDescriptionInEditNewsOnContralPanel(String changeDescription){
         Allure.step("Ввести данные в  поле описание на странице редактирования новостей");
-
         onView(getFieldDescriptionEditableNewsInControlPanel()).perform(click(), replaceText(changeDescription), closeSoftKeyboard());
     }
 
     public static void enterDataFieldTitleInEditNewsOnContralPanel(String title) {
         Allure.step("Ввести данные в  поле заголовок на странице редактирования новостей");
-
         onView(getFieldTitleEditableNewsInControlPanel()).perform(click(), replaceText(title), closeSoftKeyboard());
     }
 
     public static void clickButtonSaveEditingNewsOnContralPanel(){
         Allure.step("Нажать на кнопку сохранить отредактированную новость");
-
         onView(getButtonSaveEditableNewsInControlPanel()).perform(click());
     }
 
     public static void findNewsWithCategoryAdversiment(String title) {
         Allure.step("Проверить, что новости с  категорией Объявление");
-
         onView(allOf(withId(R.id.news_item_title_text_view), withText(title),
                 isDisplayed()));
     }
 
     public static void findNewsWithStatusNotActive() {
         Allure.step("Проверить, что новости с  категорией Благодарность");
-
         onView(allOf(withId(R.id.news_item_published_text_view), withText("NOT ACTIVE"),
                 withParent(withParent(withId(R.id.news_item_material_card_view))),
                 isDisplayed()));
     }
     public static void findNewsWithStatusActive() {
         Allure.step("Проверить, что отображаются новости с  категорией Благодарность");
-
         onView(allOf(withId(R.id.news_item_published_text_view), withText("ACTIVE"),
                 withParent(withParent(withId(R.id.news_item_material_card_view))),
                 isDisplayed()));
     }
     public static void findNewsWithSelectData(String selectData) {
         Allure.step("Проверить, что новости с  определенной датой");
-
         onView(allOf(withId(R.id.news_item_publication_date_text_view), withText(selectData),
                 isDisplayed()));
     }
@@ -198,7 +182,6 @@ public class ControlPanelStep {
     }
     public static ViewInteraction getNewsItemTitle() {
         Allure.step("Проверим, изменился ли заголовок на новый");
-
         return WaitId.waitView(withId(R.id.news_item_title_text_input_edit_text));
     }
 
@@ -206,7 +189,6 @@ public class ControlPanelStep {
 
     public static ViewInteraction getNewsCategory() {
         Allure.step("Проверим, изменилась ли категория новости на новую");
-
         return WaitId.waitView(withId(R.id.news_item_category_text_auto_complete_text_view));
     }
 
@@ -227,7 +209,6 @@ public class ControlPanelStep {
     }
     public static void isItControlPanelPage() {
         Allure.step("Проверяем, находимся ли на странице Панель управления");
-
         WaitId.waitView(withText("Control panel")).check(matches(isDisplayed()));
 
     }
